@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Image className={styles.logo} src={logo} width={140} height={140} alt="ficogito"/>
-      <Image src={logoText} width={578} height={100} alt="ficogito"/>
+      <Image src={logoText} width={450} height={75} alt="ficogito"/>
     </div>
   )
 };
