@@ -1,7 +1,7 @@
 import type {NextPage} from 'next'
 import styles from '../styles/Home.module.css'
 import logo from '../public/images/Ficogito-LogoIcon.png';
-import logoText from '../public/images/Ficogito-LogoText.png';
+import logoText from '../public/images/Ficogito-logotext.png';
 import Image from 'next/image';
 import Particles from "react-tsparticles";
 
