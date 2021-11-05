@@ -15,7 +15,7 @@
     right: 0;
     z-index: -1;
     height: 100%;
-    background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/Ficogito-Background.png");
+    /*background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/Ficogito-Background.png");*/
     filter: blur(3px);
 }
 
