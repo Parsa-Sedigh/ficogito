@@ -35,7 +35,7 @@ const particlesOptions = {
                 quantity: 4,
             },
             repulse: {
-                distance: 200,
+                distance: 70,
                 duration: 0.4,
             },
         },
@@ -59,13 +59,13 @@ const particlesOptions = {
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 1,
+            speed: .5,
             straight: false,
         },
         number: {
             density: {
                 enable: true,
-                value_area: 800,
+                value_area: 1000,
             },
             value: 80,
         },
