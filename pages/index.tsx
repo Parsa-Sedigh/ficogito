@@ -4,6 +4,7 @@ import logo from '../public/images/Ficogito-LogoIcon.png';
 import logoText from '../public/images/Ficogito-logotext.png';
 import Image from 'next/image';
 import Particles from "react-tsparticles";
+import {Paths} from "../components/Paths/Paths";
 
 const particlesOptions = {
     background: {
@@ -15,11 +16,11 @@ const particlesOptions = {
     interactivity: {
         events: {
             onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
             },
             onHover: {
-                enable: true,
+                enable: false,
                 mode: "repulse",
             },
             resize: true,
@@ -87,15 +88,20 @@ const Home: NextPage = () => {
 
     return (
         <>
-            <Particles options={particlesOptions} />
-            <div className={styles.container}>
+            <div className={styles.particles}>
+                <Particles options={particlesOptions} />
+                <div className={styles.container}>
 
-                <Image className={styles.logo} src={logo} alt="ficogito"/>
-                <Image src={logoText} className={styles['text-logo']} alt="ficogito"/>
-                {/*<img src="/images/Ficogito-LogoIcon.png" className={styles.logo}/>*/}
-                {/*<img src="/images/Ficogito-LogoText.png" className={styles['text-logo']}/>*/}
+                    <Image className={styles.logo} src={logo} alt="ficogito"/>
+                    <Image src={logoText} className={styles['text-logo']} alt="ficogito"/>
+                    {/*<img src="/images/Ficogito-LogoIcon.png" className={styles.logo}/>*/}
+                    {/*<img src="/images/Ficogito-LogoText.png" className={styles['text-logo']}/>*/}
+                </div>
+            </div>
 
 
+            <div className={styles['paths-container']}>
+                <Paths />
             </div>
         </>
     )

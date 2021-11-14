@@ -4,6 +4,10 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .container::before {
@@ -17,6 +21,11 @@
     height: 100%;
     /*background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/Ficogito-Background.png");*/
     filter: blur(3px);
+}
+
+.particles canvas {
+    height: auto !important;
+    position: relative !important;
 }
 
 .container > div {
@@ -74,5 +83,11 @@
         margin-right: 0 !important;
         margin-bottom: 2rem !important;
     }
+}
+
+.paths-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
 }
 
