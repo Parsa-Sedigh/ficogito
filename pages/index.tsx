@@ -1,5 +1,5 @@
 import type {NextPage} from 'next'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import logo from '../public/images/Ficogito-LogoIcon.png';
 import logoText from '../public/images/Ficogito-logotext.png';
 import Image from 'next/image';
@@ -43,10 +43,10 @@ const particlesOptions = {
     },
     particles: {
         color: {
-            value: "#000",
+            value: "#adadad",
         },
         links: {
-            color: "#000",
+            color: "#adadad",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
                 <Particles options={particlesOptions} />
                 <div className={styles.container}>
 
-                    <Image className={styles.logo} src={logo} alt="ficogito"/>
+                    <Image className={styles.logo} width={193.6} height={220} src={logo} alt="ficogito"/>
                     <Image src={logoText} className={styles['text-logo']} alt="ficogito"/>
                     {/*<img src="/images/Ficogito-LogoIcon.png" className={styles.logo}/>*/}
                     {/*<img src="/images/Ficogito-LogoText.png" className={styles['text-logo']}/>*/}

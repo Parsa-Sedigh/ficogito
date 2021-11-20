@@ -29,7 +29,7 @@ class MyDocument extends Document {
                     <meta name="theme-color" content="#ffffff" />
                 </Head>
                 <head>
-                    <title>FiCogito</title>
+                    <title>FICOGITO</title>
                 </head>
             <body>
                 <Main />

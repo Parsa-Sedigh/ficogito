@@ -1,0 +1,129 @@
+//@use "styles/Home.module" as home;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    @media (max-width: 600px) {
+        background-color: blanchedalmond;
+    }
+}
+
+.main-image {
+    grid-column: 2/3;
+}
+
+.path {
+    background: #000;
+    width: 3px;
+}
+
+.path--vertical-long {
+    height: 15rem;
+
+
+}
+.path--vertical-short {
+    height: 10rem;
+}
+.path--vertical-short-2 {
+    height: 5rem;
+}
+.path--vertical-short-3 {
+    height: 2rem;
+}
+
+.top-row {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+    align-items: end;
+    position: relative;
+}
+
+.bottom-row {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+    align-items: start;
+    position: relative;
+}
+
+.line-1 {
+    grid-column: 1/2; position: relative
+}
+.line-2 {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: -16.5%;
+    left: 8.6%
+}
+.line-3 {
+    position: absolute;
+    bottom: -33%;
+    left: 17.4%
+}
+.line-4 {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: -49%;
+    left: 26%
+}
+.line-5 {
+    grid-column: 2/-1;
+    position: relative;
+    height: 100%
+}
+.line-6 {
+    grid-column: 3/-1;
+    position: absolute;
+    height: 100%;
+    right: 0
+}
+.line-7 {
+    position: absolute;
+    bottom: -31.9%;
+    right: 26%;
+    transform: rotate(90deg);
+    height: 65%
+}
+.line-8 {
+    position: absolute;
+    bottom: -19%;
+    right: 51.7%;
+    height: 20%
+}
+.line-9 {
+    position: absolute;
+    top: -45%;
+    left: 23.8%;
+    transform: rotate(90deg);
+    height: 90%
+}
+.line-10 {
+    grid-column: 1/2;
+    height: 10rem;
+}
+.line-11 {
+    position: absolute;
+    top: -40%;
+    left: 47.5%;
+    height: 40%;
+}
+.line-12 {
+    grid-column: 3/-1;
+    justify-self: end;
+    height: 120%;
+    position: absolute;
+    top: -60%;
+}
+.line-13 {
+    position: absolute;
+    top: -92%;
+    right: 17.2%;
+    height: 65%;
+    transform: rotate(90deg);
+}

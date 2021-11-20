@@ -1,62 +1,21 @@
 import Image from 'next/image';
 import ficogito from '../../public/images/Ficogito-LogoIcon.png';
-import styles from './Paths.module.css';
+import styles from './Paths.module.scss';
 
 export const Paths = () => {
 
     return (
         <div className={styles.container}>
-            <div style={{
-                gridColumn: '1/-1',
-                display: 'grid',
-                gridTemplateColumns: 'repeat(3, 1fr)',
-                gridAutoFlow: 'column',
-                alignItems: 'end',
-                position: 'relative'
-            }}>
-                <div className={`${styles.path} ${styles['path--vertical-long']}`} style={{gridColumn: '1/2', position: 'relative'}} />
-                <div className={`${styles.path} ${styles['path--vertical-short-2']}`} style={{
-                    transform: 'rotate(90deg)',
-                    position: 'absolute',
-                    bottom: '-16.5%',
-                    left: '8.6%'
-                }}/>
-                <div className={`${styles.path} ${styles['path--vertical-short-2']}`} style={{
-                    position: 'absolute',
-                    bottom: '-33%',
-                    left: '17.4%'
-                }}/>
-                <div className={`${styles.path} ${styles['path--vertical-short-2']}`} style={{
-                    transform: 'rotate(90deg)',
-                    position: 'absolute',
-                    bottom: '-49%',
-                    left: '26%'
-                }}/>
+            <div className={styles['top-row']}>
+                <div className={`${styles.path} ${styles['path--vertical-long']} ${styles['line-1']}`} />
+                <div className={`${styles.path} ${styles['path--vertical-short-2']} ${styles['line-2']}`}/>
+                <div className={`${styles.path} ${styles['path--vertical-short-2']} ${styles['line-3']}`}/>
+                <div className={`${styles.path} ${styles['path--vertical-short-2']} ${styles['line-4']}`} />
 
-                <div style={{
-                    gridColumn: '2/-1',
-                    position: 'relative',
-                    height: '100%'
-                }}>
-                    <div className={`${styles.path} ${styles['path--vertical-short']}`} style={{
-                        gridColumn: '3/-1',
-                        position: 'absolute',
-                        height: '100%',
-                        right: '0'
-                    }} />
-                    <div className={`${styles.path}`} style={{
-                        position: 'absolute',
-                        bottom: '-31.9%',
-                        right: '26%',
-                        transform: 'rotate(90deg)',
-                        height: '65%'
-                    }} />
-                    <div className={`${styles.path}`} style={{
-                        position: 'absolute',
-                        bottom: '-19%',
-                        right: '51.7%',
-                        height: '20%'
-                    }} />
+                <div className={styles['line-5']}>
+                    <div className={`${styles.path} ${styles['path--vertical-short']} ${styles['line-6']}`}  />
+                    <div className={`${styles.path} ${styles['line-7']}`} />
+                    <div className={`${styles.path} ${styles['line-8']}`} />
                 </div>
 
             </div>
@@ -66,42 +25,12 @@ export const Paths = () => {
             </div>
 
 
-            <div style={{
-                gridColumn: '1/-1',
-                display: 'grid',
-                gridTemplateColumns: 'repeat(3, 1fr)',
-                gridAutoFlow: 'column',
-                alignItems: 'start',
-                position: 'relative'
-            }}>
-                <div className={`${styles.path} ${styles['path--vertical-short']}`} style={{gridColumn: '1/2'}}/>
-                <div className={`${styles.path}`} style={{
-                    position: 'absolute',
-                    top: '-45%',
-                    left: '23.8%',
-                    transform: 'rotate(90deg)',
-                    height: '90%'
-                }} />
-                <div className={`${styles.path}`} style={{
-                    position: 'absolute',
-                    top: '-40%',
-                    left: '47.5%',
-                    height: '40%'
-                }} />
-                <div className={`${styles.path}`} style={{
-                    gridColumn: '3/-1',
-                    justifySelf: 'end',
-                    height: '120%',
-                    position: 'absolute',
-                    top: '-60%'
-                }} />
-                <div className={`${styles.path}`} style={{
-                    position: 'absolute',
-                    top: '-92%',
-                    right: '17.2%',
-                    height: '65%',
-                    transform: 'rotate(90deg)',
-                }} />
+            <div className={styles['bottom-row']}>
+                <div className={`${styles.path} ${styles['line-10']}`}  />
+                <div className={`${styles.path} ${styles['path--vertical-short']} ${styles['line-9']}`}/>
+                <div className={`${styles.path} ${styles['line-11']}`} />
+                <div className={`${styles.path} ${styles['line-12']}`} /> {/* TODO ?? See thi styles from the prod app */}
+                <div className={`${styles.path} ${styles['line-13']}`} />
             </div>
 
         </div>
