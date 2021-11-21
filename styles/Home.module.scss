@@ -85,10 +85,22 @@
     }
 }
 
+.text-logo {
+
+}
+
 .paths-container {
     display: flex;
     justify-content: center;
+    position: relative;
     margin-top: 15rem;
+    overflow: hidden;
+}
+
+.dots {
+    position: absolute;
+    right: -10rem;
+    color: #f0f2f6;
 }
 
 @mixin respond($breakpoint) {
