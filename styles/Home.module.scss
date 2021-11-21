@@ -23,6 +23,11 @@
     filter: blur(3px);
 }
 
+.particles {
+    background-color: #f7f8fd;
+    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 90vh);
+}
+
 .particles canvas {
     height: auto !important;
     position: relative !important;
@@ -93,7 +98,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 15rem;
+    margin-top: 5rem;
     overflow: hidden;
 }
 
