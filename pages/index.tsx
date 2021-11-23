@@ -100,20 +100,19 @@ const Home: NextPage = () => {
             </div>
 
 
-            <div className={styles['paths-container']}>
-                <Paths />
-                <svg className={`${styles['dots']}`}
-                     width="300" height="684" viewBox="0 0 404 784">
-                    <defs>
-                        <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"
-                                 patternUnits="userSpaceOnUse">
-                            <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect>
-                        </pattern>
-                    </defs>
-                    <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"></rect>
-                </svg>
+            {/*<div className={styles['paths-container']}>*/}
+                {/*<Paths />*/}
+                {/*<svg className={`${styles['dots']}`} width="300" height="684" viewBox="0 0 404 784">*/}
+                    {/*<defs>*/}
+                       {/* <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"*/}
+                              {/*  patternUnits="userSpaceOnUse">*/}
+                        {/*    <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect>*/}
+                      {/*  </pattern>*/}
+                   {/* </defs>*/}
+                    <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"></rect>*/}
+              {/*  </svg>*/}
 
-            </div>
+           {/* </div> */}
         </>
     )
 };
