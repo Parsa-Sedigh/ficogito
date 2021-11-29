@@ -1,7 +1,10 @@
 import styles from './Roadmap.module.scss';
 import {StepColumn} from "./StepColumn/StepColumn";
+import {StepContent} from "./StepContent/StepContent";
+import {StepBody} from "./StepBody/StepBody";
+import {StepHeader} from "./StepHeader/StepHeader";
 
-export const Roadmap = () => {
+export const Steps = () => {
 
     return (
         <div className={styles.container}>
@@ -26,3 +29,9 @@ export const Roadmap = () => {
         </div>
     );
 };
+
+Steps.StepColumn = StepColumn;
+Steps.StepContent = StepContent;
+Steps.StepBody = StepBody;
+Steps.StepHeader = StepHeader;
+

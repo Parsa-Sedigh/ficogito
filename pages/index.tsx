@@ -5,7 +5,7 @@ import logo from '../public/images/Ficogito-LogoIcon.png';
 import Image from 'next/image';
 import Particles from "react-tsparticles";
 import {Paths} from "../components/Paths/Paths";
-import {Roadmap} from "../components/Roadmap/Roadmap";
+import {Steps} from "../components/Roadmap/Steps";
 import {Carousel} from "../components/Carousel/Carousel";
 
 const particlesOptions = {
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
             </section>
 
             <section>
-                <Roadmap />
+                <Steps />
             </section>
         </>
     )
