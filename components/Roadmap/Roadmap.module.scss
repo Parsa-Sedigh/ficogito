@@ -1,0 +1,130 @@
+.container {
+  margin: 0 5rem;
+}
+
+.row {
+  display: flex;
+  position: relative;
+
+  &::before, &::after {
+
+  }
+
+  &::before {}
+
+  &:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: calc(100%);
+    border-style: solid;
+    top: 41px;
+
+    border-left-width: 0;
+    border-radius: 0 20px 20px 0;
+    width: 15px;
+    border-color: #07bcff;
+  }
+  &:nth-child(even)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: calc(100%);
+    border-left-width: 0;
+    border-style: solid;
+    top: 41px;
+
+    border-radius: 0 20px 20px 0;
+    border-color: #07bcff;
+  }
+}
+
+.column {
+  flex: 1;
+}
+
+.step {
+  position: relative;
+
+  &::before, &::after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    top: 41px;
+
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-color: #07bcff;
+
+  }
+
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+    left: auto;
+  }
+
+  &__content {
+    padding: 0 3rem 3.5rem;
+
+    // ? ::after?
+    &::before {
+      border-left-style: dashed;
+      border-color: rgba(255,255,255,0.1);
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  &__header-text {
+    text-align: center;
+  }
+
+  &__time {
+    position: relative;
+    text-align: center;
+    padding-bottom: 31px;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &::before {
+      bottom: -2px;
+      left: 50%;
+
+      width: 27px;
+      height: 27px;
+      margin-left: -13.5px;
+      margin-top: -13.5px;
+
+      background: rgba(23, 7, 7, 0.1);
+    }
+    &::after {
+      left: 50%;
+      bottom: 5px;
+
+      width: 11px;
+      height: 11px;
+      margin-left: -5.5px;
+      margin-top: -5.5px;
+
+      background: rgba(255, 46, 46, 0.7);
+    }
+  }
+
+  &__list {
+
+
+    &::before {} // todo: In defigroups, it is ::after
+  }
+}
+
