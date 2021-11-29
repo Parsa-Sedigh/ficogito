@@ -1,4 +1,4 @@
-export const RoadmapHeader = () => {
+export const StepBody = () => {
 
     return (
         <div></div>

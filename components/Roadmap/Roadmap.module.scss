@@ -15,27 +15,27 @@
   &:nth-child(odd)::after {
     content: '';
     position: absolute;
-    right: 0;
-    height: calc(100%);
+    right: -15px;
+    height: 99%;
     border-style: solid;
     top: 41px;
 
     border-left-width: 0;
     border-radius: 0 20px 20px 0;
     width: 15px;
-    border-color: #07bcff;
+    border-color: black;
   }
   &:nth-child(even)::after {
     content: '';
     position: absolute;
-    left: 0;
-    height: calc(100%);
-    border-left-width: 0;
+    height: 98.7%;
+    border-right-width: 0;
     border-style: solid;
     top: 41px;
-
-    border-radius: 0 20px 20px 0;
-    border-color: #07bcff;
+    left: -15px;
+    width: 15px;
+    border-radius: 20px 0 0 20px;
+    border-color: black;
   }
 }
 
@@ -54,7 +54,7 @@
 
     border-top-width: 3px;
     border-top-style: solid;
-    border-color: #07bcff;
+    border-color: black;
 
   }
 
@@ -94,6 +94,7 @@
     &::before, &::after {
       content: '';
       position: absolute;
+      z-index: 1;
       border-radius: 50%;
     }
 
@@ -117,7 +118,7 @@
       margin-left: -5.5px;
       margin-top: -5.5px;
 
-      background: rgba(255, 46, 46, 0.7);
+      background: #ff5b41;
     }
   }
 

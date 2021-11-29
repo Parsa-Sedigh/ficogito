@@ -1,27 +1,27 @@
 import styles from './Roadmap.module.scss';
-import {RoadmapColumn} from "./RoadmapColumn/RoadmapColumn";
+import {StepColumn} from "./StepColumn/StepColumn";
 
 export const Roadmap = () => {
 
     return (
         <div className={styles.container}>
             <div className={styles.row}>
-                <RoadmapColumn />
-                <RoadmapColumn />
-                <RoadmapColumn />
-                <RoadmapColumn />
+                <StepColumn />
+                <StepColumn />
+                <StepColumn />
+                <StepColumn />
             </div>
             <div className={styles.row}>
-                <RoadmapColumn />
-                <RoadmapColumn />
-                <RoadmapColumn />
-                <RoadmapColumn />
+                <StepColumn />
+                <StepColumn />
+                <StepColumn />
+                <StepColumn />
             </div>
             <div className={styles.row}>
-                <RoadmapColumn />
-                <RoadmapColumn />
-                <RoadmapColumn />
-                <RoadmapColumn />
+                <StepColumn />
+                <StepColumn />
+                <StepColumn />
+                <StepColumn />
             </div>
         </div>
     );

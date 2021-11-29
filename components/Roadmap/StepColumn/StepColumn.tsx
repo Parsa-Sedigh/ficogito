@@ -1,6 +1,8 @@
 import styles from "../Roadmap.module.scss";
 
-export const RoadmapColumn = () => {
+
+
+export const StepColumn = () => {
 
     return (
         <div className={styles.column}>

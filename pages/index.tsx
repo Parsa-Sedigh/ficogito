@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Particles from "react-tsparticles";
 import {Paths} from "../components/Paths/Paths";
 import {Roadmap} from "../components/Roadmap/Roadmap";
+import {Carousel} from "../components/Carousel/Carousel";
 
 const particlesOptions = {
     background: {
@@ -99,6 +100,10 @@ const Home: NextPage = () => {
                     {/*<img src="/images/Ficogito-LogoText.png" className={styles['text-logo']}/>*/}
                 </div>
             </div>
+
+            <section>
+                <Carousel />
+            </section>
 
             <section>
                 <Roadmap />
