@@ -1,4 +1,4 @@
-import styles from "../Roadmap.module.scss";
+import styles from "../Steps.module.scss";
 
 
 

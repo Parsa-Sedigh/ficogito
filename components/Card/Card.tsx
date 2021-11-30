@@ -1,6 +1,10 @@
+import styles from './Card.module.scss';
+
 export const Card = () => {
-    // todo: This comp gonna be used as an item in carousel
+
     return (
-        <div></div>
+        <div className={styles.container}>
+
+        </div>
     );
 };

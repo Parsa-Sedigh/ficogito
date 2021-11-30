@@ -1,4 +1,4 @@
-import styles from './Roadmap.module.scss';
+import styles from './Steps.module.scss';
 import {StepColumn} from "./StepColumn/StepColumn";
 import {StepContent} from "./StepContent/StepContent";
 import {StepBody} from "./StepBody/StepBody";

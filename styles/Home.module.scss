@@ -105,7 +105,7 @@
 .dots {
     position: absolute;
     right: -10rem;
-    color: #f0f2f6;
+    color: var(--color-primary-5);
 }
 
 @mixin respond($breakpoint) {
