@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logoHexagonal from '../../public/images/Ficogito-logo-hexagonal.png';
+import logoHexagonal from '../../public/images/ficogito-logo-hexagonal.png';
 import styles from './Paths.module.scss';
 
 export const Paths = () => {

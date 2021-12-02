@@ -86,7 +86,6 @@ const particlesOptions = {
 } as any;
 
 const Home: NextPage = () => {
-    // 38
     return (
         <>
             <div className={styles.particles}>
