@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ficogito from '../../public/images/Ficogito-LogoIcon.png';
+import logoHexagonal from '../../public/images/Ficogito-logo-hexagonal.png';
 import styles from './Paths.module.scss';
 
 export const Paths = () => {
@@ -21,7 +21,7 @@ export const Paths = () => {
             </div>
 
             <div className={styles['main-image']}>
-                <Image src={ficogito} alt="ficogito" width={150} height={150} />
+                <Image src={logoHexagonal} alt="ficogito" width={150} height={150} />
             </div>
 
 

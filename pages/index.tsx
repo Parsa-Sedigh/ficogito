@@ -1,10 +1,11 @@
 import type {NextPage} from 'next'
 import styles from '../styles/Home.module.scss'
-import logo from '../public/images/Ficogito-LogoIcon.png';
-import logoText from '../public/images/Ficogito-logotext.png';
+import hexagonalLogo from '../public/images/Ficogito-logo-hexagonal.png';
+import logoText from '../public/images/ficogito-logo-text.png';
 import Image from 'next/image';
 import Particles from "react-tsparticles";
 import {Paths} from "../components/Paths/Paths";
+import {Steps} from "../components/Roadmap/Steps";
 
 const particlesOptions = {
     background: {
@@ -85,35 +86,43 @@ const particlesOptions = {
 } as any;
 
 const Home: NextPage = () => {
-
+    // 38
     return (
         <>
             <div className={styles.particles}>
-                <Particles options={particlesOptions} />
+                <div className={styles['background--right']} />
+                <Particles options={particlesOptions}   />
                 <div className={styles.container}>
+                    <div className={styles.hexagonal__logo}>
+                        <Image src={hexagonalLogo} className={styles.hexagonal__image} layout="fill" objectFit="contain" alt="ficogito"/>
+                    </div>
 
-                    <Image className={styles.logo} width={193.6} height={220} src={logo} alt="ficogito"/>
-                    <Image src={logoText} className={styles['text-logo']} width={440} height={98} alt="ficogito"/>
-                    {/*<img src="/images/Ficogito-LogoIcon.png" className={styles.logo}/>*/}
-                    {/*<img src="/images/Ficogito-LogoText.png" className={styles['text-logo']}/>*/}
+                    <div className={styles.text__logo}>
+                        <Image src={logoText} className={styles['text-logo']} layout="fill" objectFit="contain" alt="ficogito"/>
+                    </div>
+
                 </div>
             </div>
 
 
-            <div className={styles['paths-container']}>
-                <Paths />
-                <svg className={`${styles['dots']}`}
-                     width="300" height="684" viewBox="0 0 404 784">
-                    <defs>
-                        <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"
-                                 patternUnits="userSpaceOnUse">
-                            <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect>
-                        </pattern>
-                    </defs>
-                    <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"></rect>
-                </svg>
+            {/*<div className={styles['paths']}>*/}
+            {/*    <div className={styles['background--left']} />*/}
 
-            </div>
+            {/*    <Paths />*/}
+            {/*    <svg className={`${styles['dots']}`}*/}
+            {/*         width="300" height="684" viewBox="0 0 404 784">*/}
+            {/*        <defs>*/}
+            {/*            <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"*/}
+            {/*                     patternUnits="userSpaceOnUse">*/}
+            {/*                <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect>*/}
+            {/*            </pattern>*/}
+            {/*        </defs>*/}
+            {/*        <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"></rect>*/}
+            {/*    </svg>*/}
+
+            {/*</div>*/}
+
+            {/*<Steps />*/}
         </>
     )
 };
