@@ -1,6 +1,6 @@
 import type {NextPage} from 'next'
 import styles from '../styles/Home.module.scss'
-import hexagonalLogo from '../public/images/Ficogito-logo-hexagonal.png';
+import hexagonalLogo from '../public/images/ficogito-logo-hexagonal.png';
 import logoText from '../public/images/ficogito-logo-text.png';
 import Image from 'next/image';
 import Particles from "react-tsparticles";
