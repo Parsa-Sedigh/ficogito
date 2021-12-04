@@ -86,6 +86,7 @@ const particlesOptions = {
 } as any;
 
 const Home: NextPage = () => {
+    // text: ratio: 1920 589 logo: 256 291
     return (
         <div className={styles['page-container']}>
             <div className={styles.particles}>
@@ -93,11 +94,23 @@ const Home: NextPage = () => {
                 <Particles options={particlesOptions}   />
                 <div className={styles.container}>
                     <div className={styles.hexagonal__logo}>
-                        <Image src={hexagonalLogo} className={styles.hexagonal__image} layout="fill" objectFit="contain" alt="ficogito"/>
+                        <Image src={hexagonalLogo}
+                               className={styles.hexagonal__image}
+                               // layout="fill"
+                               // objectFit="contain"
+                            width={192}
+                            height={220}
+                               alt="ficogito"/>
                     </div>
 
                     <div className={styles.text__logo}>
-                        <Image src={logoText} className={styles['text-logo']} layout="fill" objectFit="contain" alt="ficogito"/>
+                        <Image src={logoText}
+                               className={styles['text-logo']}
+                               // layout="fill"
+                               // objectFit="contain"
+                               width={550}
+                               height={180}
+                               alt="ficogito"/>
                     </div>
 
                 </div>
