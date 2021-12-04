@@ -172,6 +172,10 @@
 
   .container > :nth-child(1) {
     max-width: 60% !important;
+
+    @include respond(phone) {
+      max-width: 100% !important;
+    }
   }
 
   .logo {
@@ -284,6 +288,23 @@
   color: var(--color-primary-5);
 }
 
+.img-text {
+  //width: 50%;
+  height: 27%;
 
+  @include respond(phone) {
+    height: 18%;
+  }
+}
+
+.img-hexa {
+  height: 50%;
+  margin-right: 2rem;
+  animation: MoveUpDown 4s linear infinite;
+
+  @include respond(phone) {
+    margin-right: 0;
+  }
+}
 
 

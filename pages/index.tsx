@@ -93,25 +93,27 @@ const Home: NextPage = () => {
                 <div className={styles['background--right']} />
                 <Particles options={particlesOptions}   />
                 <div className={styles.container}>
-                    <div className={styles.hexagonal__logo}>
-                        <Image src={hexagonalLogo}
-                               className={styles.hexagonal__image}
-                               // layout="fill"
-                               // objectFit="contain"
-                            width={192}
-                            height={230}
-                               alt="ficogito"/>
-                    </div>
+                    {/*<div className={styles.hexagonal__logo}>*/}
+                        {/*<Image src={hexagonalLogo}*/}
+                        {/*       className={styles.hexagonal__image}*/}
+                        {/*       // layout="fill"*/}
+                        {/*       // objectFit="contain"*/}
+                        {/*    width={192}*/}
+                        {/*    height={230}*/}
+                        {/*       alt="ficogito"/>*/}
+                        <img src="images/ficogito-logo-hexagonal.png" className={`${styles.img} ${styles['img-hexa']}`} alt="ficogito" />
+                    {/*</div>*/}
 
-                    <div className={styles.text__logo}>
-                        <Image src={logoText}
-                               className={styles['text-logo']}
-                               // layout="fill"
-                               // objectFit="contain"
-                               width={550}
-                               height={170}
-                               alt="ficogito"/>
-                    </div>
+                    {/*<div className={styles.text__logo}>*/}
+                        {/*<Image src={logoText}*/}
+                        {/*       className={styles['text-logo']}*/}
+                        {/*       // layout="fill"*/}
+                        {/*       // objectFit="contain"*/}
+                        {/*       width={550}*/}
+                        {/*       height={170}*/}
+                        {/*       alt="ficogito"/>*/}
+                        <img src="images/ficogito-logo-text.png" className={styles['img-text']} alt="ficogito" />
+                    {/*</div>*/}
 
                 </div>
             </div>
