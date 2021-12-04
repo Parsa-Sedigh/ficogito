@@ -1,11 +1,12 @@
 // eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, {Html, Head, Main, NextScript, DocumentContext} from 'next/document';
 
+// @ts-ignore
 class MyDocument extends Document {
-    // static async getInitialProps(ctx: DocumentContext) {
-    //     const initialProps = await Document.getInitialProps(ctx)
-    //     return { ...initialProps }
-    // }
+    static async getInitialProps(ctx: DocumentContext) {
+        const initialProps = await Document.getInitialProps(ctx)
+        return { ...initialProps }
+    }
 
     render() {
         return (
