@@ -26,6 +26,15 @@ body {
   }
 }
 
+.dotsSvg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../public/icons/sprite.svg");
+  background-size: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
