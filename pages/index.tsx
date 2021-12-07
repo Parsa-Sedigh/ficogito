@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Particles from "react-tsparticles";
 import {Paths} from "../components/Paths/Paths";
 import {Steps} from "../components/Roadmap/Steps";
+import {Carousel} from "../components/Carousel/Carousel";
 
 const particlesOptions = {
     background: {
@@ -162,6 +163,8 @@ const Home: NextPage = () => {
                 {/*</div>*/}
 
                 {/*<Steps />*/}
+
+                {/*<Carousel />*/}
             </div>
         </>
 
