@@ -1,8 +1,9 @@
 import styles from "../Steps.module.scss";
+import {ReactNode} from "react";
 
 
 
-export const StepColumn = () => {
+export const StepColumn = ({children, ...restProps}: {children: ReactNode}) => {
 
     return (
         <div className={styles.column}>

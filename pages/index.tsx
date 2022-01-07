@@ -162,9 +162,9 @@ const Home: NextPage = () => {
 
                 {/*</div>*/}
 
-                {/*<Steps />*/}
+                <Steps />
 
-                {/*<Carousel />*/}
+                <Carousel swiperClasses={styles.carousel} />
             </div>
         </>
 

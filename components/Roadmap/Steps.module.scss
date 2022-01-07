@@ -1,5 +1,11 @@
+@use "/styles/sass/main";
+
 .container {
   margin: 0 5rem;
+
+  @include main.respond(tab-port) {
+    margin: 0 2rem;
+  }
 }
 
 .row {
@@ -24,6 +30,13 @@
     border-radius: 0 20px 20px 0;
     width: 15px;
     border-color: black;
+
+    @include main.respond(phone) {
+      left: -13px;
+      border-radius: 0;
+      border-top-width: 0;
+      border-bottom-width: 0;
+    }
   }
   &:nth-child(even)::after {
     content: '';
@@ -36,11 +49,52 @@
     width: 15px;
     border-radius: 20px 0 0 20px;
     border-color: black;
+
+    @include main.respond(phone) {
+      left: -1px;
+      border-radius: 0;
+      border-top-width: 0;
+      border-bottom-width: 0;
+    }
   }
+
+  &--tab-land {
+    display: none;
+
+    @include main.respond(tab-land) {
+      display: flex;
+    }
+  }
+
+  &--tab-port {
+
+  }
+
+  &--phone {}
 }
 
 .column {
   flex: 1;
+
+  @include main.respond(tab-land) {
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @include main.respond(tab-port) {
+    &:nth-last-child(2) {
+      display: none;
+    }
+  }
+
+  @include main.respond(phone) {
+    &:first-child {
+      display: none;
+    }
+  }
+
 }
 
 .step {
@@ -56,6 +110,10 @@
     border-top-style: solid;
     border-color: black;
 
+    @include main.respond(phone) {
+      display: none;
+    }
+
   }
 
   &::before {
@@ -68,6 +126,10 @@
 
   &__content {
     padding: 0 3rem 3.5rem;
+
+    @include main.respond(phone) {
+      padding: 0;
+    }
 
     // ? ::after?
     &::before {
@@ -84,6 +146,11 @@
 
       border-left-style: dashed;
       border-color: #ff5b41;
+
+      @include main.respond(phone) {
+        left: 30px;
+        transform: translateY(-38px) rotate(90deg);
+      }
     }
   }
 
@@ -96,12 +163,20 @@
   &__header-text {
     text-align: center;
     padding-top: 4.8rem;
+
+    @include main.respond(phone) {
+      padding-top: 1.5rem;
+    }
   }
 
   &__time {
     position: relative;
     text-align: center;
     padding-bottom: 31px;
+
+    @include main.respond(phone) {
+      text-align: left;
+    }
 
     &::before, &::after {
       content: '';
@@ -120,6 +195,10 @@
       margin-top: -13.5px;
 
       background: rgba(23, 7, 7, 0.1);
+
+      @include main.respond(phone) {
+        left: 0;
+      }
     }
     &::after {
       left: 50%;
@@ -131,6 +210,10 @@
       margin-top: -5.5px;
 
       background: #ff5b41;
+
+      @include main.respond(phone) {
+        left: 0;
+      }
     }
   }
 

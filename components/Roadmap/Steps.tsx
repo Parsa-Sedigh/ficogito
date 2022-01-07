@@ -26,6 +26,13 @@ export const Steps = () => {
                 <StepColumn />
                 <StepColumn />
             </div>
+
+            <div className={`${styles.row} ${styles['row--tab-land']}`}>
+                <StepColumn />
+                <StepColumn />
+                <StepColumn />
+                <StepColumn />
+            </div>
         </div>
     );
 };
