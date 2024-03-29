@@ -90,15 +90,8 @@ const Home: NextPage = () => {
     // text: ratio: 1920 589 logo: 256 291
     return (
         <>
-            <div className={styles.announcement}>
-                Our website is undergoing renovations! Stay tuned for the big reveal on May 1st!
-                Feel free to reach out via email if interested!
-                <br/>
-
-                <a className={styles.announcement__link} href="mailto:info@ficogito.com">info@ficogito.com</a>
-            </div>
-
-            <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 translate-y-1/12 dotsSvg" width="404"
+            <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 translate-y-1/12 dotsSvg"
+                 width="404"
                  height="684" viewBox="0 0 404 784">
                 <defs>
                     <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"
@@ -108,6 +101,14 @@ const Home: NextPage = () => {
                 </defs>
                 <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"></rect>
             </svg>
+
+            <div className={styles.announcement}>
+                Our website is undergoing renovations! Stay tuned for the big reveal on May 1st!
+                Feel free to reach out via email if interested: &nbsp;
+                <a className={styles.announcement__link} href="mailto:info@ficogito.com">info@ficogito.com</a>
+            </div>
+
+
             <div className={styles['page-container']}>
                 <div className={styles.particles}>
                     <div className={styles['background--right']}/>
@@ -135,9 +136,9 @@ const Home: NextPage = () => {
                         {/*       alt="ficogito"/>*/}
                         <img src="images/ficogito-logo-text.png" className={styles['img-text']} alt="ficogito"/>
                         {/*</div>*/}
-
                     </div>
                 </div>
+
 
                 {/*<div className={styles['dots-container']}>*/}
                 {/*    <svg className={`${styles['dots']}`}*/}

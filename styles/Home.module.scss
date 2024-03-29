@@ -42,15 +42,11 @@
 }
 
 .announcement {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+  width: 400px;
   z-index: 1;
-  width: 100%;
-  text-align: center;
-  padding: .25rem;
-
-  background-color: black;
-  color: white;
 
   &__link {
     text-decoration: underline;
@@ -94,7 +90,7 @@
   overflow: hidden;
 
   @include respond(phone) {
-    clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100vh);
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 90vh);
   }
 
   & canvas {
