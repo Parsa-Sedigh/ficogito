@@ -43,10 +43,16 @@
 
 .announcement {
   position: absolute;
-  right: 10%;
+  right: 5%;
   bottom: 15%;
   width: 400px;
   z-index: 1;
+
+  @include respond(tab-land) {
+    right: 5%;
+    bottom: 10%;
+    width: 200px;
+  }
 
   &__link {
     text-decoration: underline;

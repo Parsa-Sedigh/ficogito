@@ -114,66 +114,11 @@ const Home: NextPage = () => {
                     <div className={styles['background--right']}/>
                     <Particles options={particlesOptions}/>
                     <div className={styles.container}>
-                        {/*<div className={styles.hexagonal__logo}>*/}
-                        {/*<Image src={hexagonalLogo}*/}
-                        {/*       className={styles.hexagonal__image}*/}
-                        {/*       // layout="fill"*/}
-                        {/*       // objectFit="contain"*/}
-                        {/*    width={192}*/}
-                        {/*    height={230}*/}
-                        {/*       alt="ficogito"/>*/}
                         <img src="images/ficogito-logo-hexagonal.png" className={`${styles.img} ${styles['img-hexa']}`}
                              alt="ficogito"/>
-                        {/*</div>*/}
-
-                        {/*<div className={styles.text__logo}>*/}
-                        {/*<Image src={logoText}*/}
-                        {/*       className={styles['text-logo']}*/}
-                        {/*       // layout="fill"*/}
-                        {/*       // objectFit="contain"*/}
-                        {/*       width={550}*/}
-                        {/*       height={170}*/}
-                        {/*       alt="ficogito"/>*/}
                         <img src="images/ficogito-logo-text.png" className={styles['img-text']} alt="ficogito"/>
-                        {/*</div>*/}
                     </div>
                 </div>
-
-
-                {/*<div className={styles['dots-container']}>*/}
-                {/*    <svg className={`${styles['dots']}`}*/}
-                {/*         width="1200" height="860" viewBox="0 0 404 784">*/}
-                {/*        <defs>*/}
-                {/*            <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"*/}
-                {/*                     patternUnits="userSpaceOnUse">*/}
-                {/*                <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect>*/}
-                {/*            </pattern>*/}
-                {/*        </defs>*/}
-                {/*        <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"></rect>*/}
-                {/*    </svg>*/}
-                {/*</div>*/}
-
-
-                {/*<div className={styles['paths']}>*/}
-                {/*    <div className={styles['background--left']} />*/}
-
-                {/*    <Paths />*/}
-                {/*    <svg className={`${styles['dots']}`}*/}
-                {/*         width="300" height="684" viewBox="0 0 404 784">*/}
-                {/*        <defs>*/}
-                {/*            <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"*/}
-                {/*                     patternUnits="userSpaceOnUse">*/}
-                {/*                <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"></rect>*/}
-                {/*            </pattern>*/}
-                {/*        </defs>*/}
-                {/*        <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"></rect>*/}
-                {/*    </svg>*/}
-
-                {/*</div>*/}
-
-                {/*<Steps />*/}
-
-                {/*<Carousel swiperClasses={styles.carousel} />*/}
             </div>
         </>
 

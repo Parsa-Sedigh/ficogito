@@ -33,6 +33,10 @@ body {
   height: 100%;
   background: url("../public/icons/sprite.svg");
   background-size: 100%;
+
+  @media (max-width: 56.25em) {
+    display: none;
+  }
 }
 
 a {
