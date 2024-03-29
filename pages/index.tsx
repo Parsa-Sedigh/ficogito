@@ -102,12 +102,6 @@ const Home: NextPage = () => {
                 <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"></rect>
             </svg>
 
-            <div className={styles.announcement}>
-                Our website is undergoing renovations! Stay tuned for the big reveal on May 1st!
-                Feel free to reach out via email if interested: &nbsp;
-                <a className={styles.announcement__link} href="mailto:info@ficogito.com">info@ficogito.com</a>
-            </div>
-
 
             <div className={styles['page-container']}>
                 <div className={styles.particles}>
