@@ -90,6 +90,14 @@ const Home: NextPage = () => {
     // text: ratio: 1920 589 logo: 256 291
     return (
         <>
+            <div className={styles.announcement}>
+                Our website is undergoing renovations! Stay tuned for the big reveal on May 1st!
+                Feel free to reach out via email if interested!
+                <br/>
+
+                <a className={styles.announcement__link} href="mailto:info@ficogito.com">info@ficogito.com</a>
+            </div>
+
             <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 translate-y-1/12 dotsSvg" width="404"
                  height="684" viewBox="0 0 404 784">
                 <defs>

@@ -41,6 +41,22 @@
   }
 }
 
+.announcement {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  padding: .25rem;
+
+  background-color: black;
+  color: white;
+
+  &__link {
+    text-decoration: underline;
+  }
+}
+
 .container {
   //min-height: 100vh;
   display: flex;
@@ -71,6 +87,7 @@
 }
 
 .particles {
+  height: 100%;
   position: relative;
   background-color: #fafafa;
   clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 90vh);
@@ -274,6 +291,7 @@
 }
 
 .page-container {
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
