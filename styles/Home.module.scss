@@ -46,7 +46,7 @@
   padding: 1rem;
 
   @include respond(phone) {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   &__link {
