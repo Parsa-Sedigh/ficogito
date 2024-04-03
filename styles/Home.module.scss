@@ -42,8 +42,10 @@
 }
 
 .announcement {
+  position: relative;
   margin-top: 5rem;
   padding: 1rem;
+  z-index: 1;
 
   @include respond(phone) {
     margin-top: 0rem;
