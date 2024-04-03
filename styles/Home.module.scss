@@ -42,16 +42,11 @@
 }
 
 .announcement {
-  position: absolute;
-  right: 5%;
-  bottom: 15%;
-  width: 400px;
-  z-index: 1;
+  margin-top: 5rem;
+  padding: 1rem;
 
-  @include respond(tab-land) {
-    right: 5%;
-    bottom: 10%;
-    width: 200px;
+  @include respond(phone) {
+    margin-top: 2rem;
   }
 
   &__link {
@@ -64,7 +59,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 70vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -92,15 +87,15 @@
   height: 100%;
   position: relative;
   background-color: #fafafa;
-  clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 90vh);
+  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 80vh);
   overflow: hidden;
 
   @include respond(phone) {
-    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 90vh);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 80vh);
   }
 
   & canvas {
-    height: 99vh !important;
+    height: 89vh !important;
     position: relative !important;
   }
 
@@ -293,7 +288,7 @@
 }
 
 .page-container {
-  height: 100%;
+  height: 80%;
   position: relative;
   overflow: hidden;
 }

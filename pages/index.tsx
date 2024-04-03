@@ -114,6 +114,13 @@ const Home: NextPage = () => {
                     </div>
                 </div>
             </div>
+
+            <div className={styles.announcement}>
+                <span style={{zIndex: 1, fontSize: 20, marginRight: 10}}>🎉</span>
+                Our website is undergoing renovations! Stay tuned for the big reveal on May 1st!
+                Feel free to reach out via email if interested: &nbsp;
+                <a className={styles.announcement__link} href="mailto:info@ficogito.com">info@ficogito.com</a>
+            </div>
         </>
 
     )
