@@ -117,7 +117,7 @@ const Home: NextPage = () => {
 
             <div className={styles.announcement}>
                 <span style={{fontSize: 20, marginRight: 10}}>🎉</span>
-                Our website is undergoing renovations! Stay tuned for the big reveal on June 1st!
+                Our website is undergoing renovations! Stay tuned for the big reveal on July 1st!
                 Feel free to reach out via email if interested: &nbsp;
                 <a className={styles.announcement__link} href="mailto:info@ficogito.com">info@ficogito.com</a>
             </div>
